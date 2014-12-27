@@ -1,0 +1,29 @@
+GeorgeStone log
+
+Dec 26 2014
+	Update : VisualManager
+	Update : PhysicsManager- One Instance or Have the player have their own?
+	next : Change the inhertance from Monn
+	
+Dec 24 2014
+	Update: Player it now has a personal phase (state)
+	Update: Minion Card has state()
+	next: change the inhertiance from Mono
+	next: SpriteManager
+	
+
+Dec 23 2014
+	Loc: Added User and Autoamted User and started Singleplayer
+	Next: Main Game loop and Current players Turn.
+
+Dec 21 2014
+	Log: rename Tech and Soft to Minions and Spells
+	Next : Start Making Game Logic 1 player and 2 player
+
+
+Dec 20 2014
+
+	Log: Made Skeleton Class for player
+	Next: Make Deck Function and Board Fuction;
+	
+	
