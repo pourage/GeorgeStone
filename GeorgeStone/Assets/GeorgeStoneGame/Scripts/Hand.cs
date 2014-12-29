@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class Hand : MonoBehaviour 
+public class Hand  
 {
 	int c_iMaxSize = 10;
 
 	List<Card> m_Cards; 
 
-	void Initialize()
+	public Hand()
 	{
 		m_Cards = new List<Card>();
 	}

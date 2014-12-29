@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Card : MonoBehaviour 
+public class Card 
 {
 	protected int m_iManaCost;
 	protected int m_iIDNumber;
 
-	enum abillites {Global,Target,BattleCry, DeathRattle};
 
 
+	public Card()
+	{
+
+	}
 
 
 	protected virtual void Initialize()

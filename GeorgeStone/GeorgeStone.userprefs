@@ -1,14 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GeorgeStoneGame\Log.txt">
     <Files>
-      <File FileName="Assets\GeorgeStoneGame\Scripts\Player.cs" Line="41" Column="2" />
-      <File FileName="Assets\GeorgeStoneGame\Scripts\PhysicsManager.cs" Line="5" Column="39" />
-      <File FileName="Assets\GeorgeStoneGame\Scripts\VisualManager.cs" Line="14" Column="26" />
-      <File FileName="Assets\GeorgeStoneGame\Scripts\Deck.cs" Line="8" Column="40" />
-      <File FileName="Assets\GeorgeStoneGame\Scripts\GameManager.cs" Line="19" Column="1" />
-      <File FileName="Assets\GeorgeStoneGame\Scripts\SinglePlayerManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\GeorgeStoneGame\Log.txt" Line="25" Column="1" />
+      <File FileName="Assets\GeorgeStoneGame\Scripts\MinionZone.cs" Line="28" Column="16" />
+      <File FileName="Assets\GeorgeStoneGame\Scripts\SinglePlayerManager.cs" Line="78" Column="26" />
+      <File FileName="Assets\GeorgeStoneGame\Scripts\Board.cs" Line="29" Column="50" />
+      <File FileName="Assets\GeorgeStoneGame\Scripts\Player.cs" Line="115" Column="30" />
+      <File FileName="Assets\GeorgeStoneGame\Scripts\Minion.cs" Line="32" Column="10" />
+      <File FileName="Assets\GeorgeStoneGame\Scripts\Card.cs" Line="11" Column="8" />
+      <File FileName="Assets\GeorgeStoneGame\Scripts\Deck.cs" Line="28" Column="13" />
+      <File FileName="Assets\GeorgeStoneGame\Log.txt" Line="3" Column="1" />
+      <File FileName="Assets\GeorgeStoneGame\Scripts\Hand.cs" Line="19" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

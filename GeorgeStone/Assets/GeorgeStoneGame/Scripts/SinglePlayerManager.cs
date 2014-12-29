@@ -5,13 +5,15 @@ public class SinglePlayerManager : MonoBehaviour
 {
 	SinglePlayerManager s_SPM;
 
-	AutomatedUser 	m_NonUser;
-	User 			m_ActiveUser;
+	NonPlayer	    m_NonPlayer;
+	MainPlayer 		m_MainPlayer;
 
 	Board			m_Board;
 	
-	Player m_ActivePlayer;
+	Player          m_ActivePlayer;
+	int m_iTurnCount;
 	
+
 	//Player m_Current
 	void Awake()
 	{
@@ -20,10 +22,14 @@ public class SinglePlayerManager : MonoBehaviour
 
 	public void InitializeNewGame()
 	{
-		m_NonUser 	= new AutomatedUser();
-		m_ActiveUser= new User();
-		m_Board		= new Board();
-		m_ActivePlayer = new Player();
+		string enemyName = "Rival Canidate";
+
+		m_NonPlayer 	= new NonPlayer(enemyName);
+		m_MainPlayer	= new MainPlayer(GameMaster.Get().GetPlayerName());
+
+		m_Board			= new Board();
+		m_ActivePlayer 	= new Player();
+		m_iTurnCount 	= 0;
 	}
 
 	//Who is Dertemined to go first
@@ -39,28 +45,37 @@ public class SinglePlayerManager : MonoBehaviour
 		//Heads Activeplayer goes first
 		if(r == 0)
 		{
-			m_ActivePlayer = m_ActiveUser;
+			m_ActivePlayer = m_MainPlayer;
 
-			m_ActiveUser.DrawStartingHand(firstPlayerHandSize);
-			m_NonUser.DrawStartingHand(secondPlayerHandSize);
+			m_MainPlayer.DrawStartingHand(firstPlayerHandSize);
+			m_NonPlayer.DrawStartingHand(secondPlayerHandSize);
 
 		}
 		//Tails NonPlayer goes first
 		else
 		{
-			m_ActivePlayer = m_NonUser;
+			m_ActivePlayer = m_NonPlayer;
 
-			m_ActiveUser.DrawStartingHand(secondPlayerHandSize);
-			m_NonUser.DrawStartingHand(firstPlayerHandSize);
+			m_MainPlayer.DrawStartingHand(secondPlayerHandSize);
+			m_NonPlayer.DrawStartingHand(firstPlayerHandSize);
 		}
+
+		//First
+
 	}
 
+	void GameStartCountDown()
+	{
+
+
+
+	}
 
 
 	void UpdateGameLoop()
 	{
 
-
+		m_ActivePlayer.SwitchPhase(Player.phase.Start);
 
 		//Stand by phase
 		// Draw phase

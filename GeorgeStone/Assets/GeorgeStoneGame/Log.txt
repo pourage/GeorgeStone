@@ -1,5 +1,12 @@
 GeorgeStone log
 
+Dec 28 2014
+	Update: Mana pool doesnt really need mana Cryetals pursayu
+	Update: the board and its Zones
+	Next: need to change boards active player
+	Next: public void DrawStartingHand
+	Next: player Main phase loop
+
 Dec 26 2014
 	Update : VisualManager
 	Update : PhysicsManager- One Instance or Have the player have their own?

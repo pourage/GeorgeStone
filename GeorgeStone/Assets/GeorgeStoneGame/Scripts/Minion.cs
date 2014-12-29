@@ -10,14 +10,19 @@ public class Minion : Card
 	bool m_bCanAttack;
 	bool m_bSumSickness;
 
-	enum state {waiting,summon, idle, attack, death}
+	public enum state {waiting,summon, idle, attack, death}
+	public enum ability { None,Start,Global,Target,BattleCry, DeathRattle};
+
 	state m_eState;
+	ability m_eAbility;
 
 	override protected void Initialize()
 	{
 		m_bCanAttack = false;
 		m_eState = state.waiting;
+		m_eAbility = ability.None;
 	}
+	
 
 	void Update()
 	{
@@ -34,5 +39,16 @@ public class Minion : Card
 		case state.death:
 			break;
 		}
+	}
+
+	//
+	public virtual void ActivateAbility()
+	{
+		//Have the Card do something here
+	}
+
+	public ability GetAbility()
+	{
+		return m_eAbility; 
 	}
 }
